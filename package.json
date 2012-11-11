@@ -1,0 +1,23 @@
+{
+  "name": "californium-proxy",
+  "version": "0.0.1",
+  "description": "A node.js client to californium-proxy-java.",
+  "license": "MIT",
+  "homepage": "https://github.com/morkai/californium-proxy-node",
+  "keywords": ["coap", "proxy", "californium"],
+  "author": {
+    "name": "Łukasz Walukiewicz",
+    "email": "lukasz@walukiewicz.eu",
+    "url": "http://lukasz.walukiewicz.eu/"
+  },
+  "bugs": "https://github.com/morkai/californium-proxy-node/issues",
+  "repository": {
+    "type": "git",
+    "url":  "http://github.com/morkai/californium-proxy-node.git"
+  },
+  "engine": ["node >=0.8.0"],
+  "main": "./lib/index",
+  "dependencies": {
+    "h5.buffers": ">=0.1.0"
+  }
+}
