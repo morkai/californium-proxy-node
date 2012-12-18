@@ -58,13 +58,35 @@ socket.on('connect', function()
 
 ## API
 
+### `Proxy.Options`
+
+Available options:
+
+  - `socket` - an instance of `net.Socket` (optional). If not specified,
+    it will be created for you with the Nagle algorithm disabled
+    (`setNoDelay(true)`).
+  - `host` - a host of the proxy server (optional). If not specified,
+    it will be read from the `socket.remoteAddress`, and if that will
+    not be available, then `127.0.0.1` will be used.
+  - `port` - a port of the proxy server (optional). If not specified,
+    it will be read from the `socket.remotePort`, and if that will
+    not be available, then `1337` will be used.
+  - `reconnect` - a boolean indicating whether the connection should be
+    reopened if closed. Defaults to `true`.
+  - `maxReconnectDelay` - a maximum delay between reconnection attempts.
+    First reconnection attempt is after 250ms, second 500ms, third - 750ms,
+    4th - 1s, etc. Defaults to `2500`ms.
+
 ### `Proxy`
 
-#### `new Proxy(socket)`
+#### `new Proxy(options)`
 
 Creates a new instance of the proxy client.
 
-  - `socket` - an instance of the `net.Socket`.
+  - `options` - an instance of the `net.Socket` (must have `remoteAddress`
+    and `remotePort` properties set - i.e. be connected) or an instance of
+    `Proxy.Options` or an options object that will be passed to
+    `Proxy.Options`.
 
 #### `destroy() : void`
 
