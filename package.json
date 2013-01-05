@@ -1,6 +1,6 @@
 {
   "name": "californium-proxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A node.js client to californium-proxy-java.",
   "license": "MIT",
   "homepage": "https://github.com/morkai/californium-proxy-node",
