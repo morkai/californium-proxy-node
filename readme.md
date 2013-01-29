@@ -4,15 +4,17 @@ A node.js client to the
 [californium-proxy-java](https://github.com/morkai/californium-proxy-java)
 Java server.
 
-# License
-
-This project is released under the [MIT License](http://opensource.org/licenses/mit-license.php).
-
 ## Requirements
 
 ### node.js
 
-Version 0.8.0 or later available at [nodejs.org](http://nodejs.org/download/).
+Node.js is a server side software system designed for writing scalable
+Internet applications in JavaScript.
+
+  * __Version__: 0.8.x
+  * __Website__: http://nodejs.org/
+  * __Download__: http://nodejs.org/download/
+  * __Installation guide__: https://github.com/joyent/node/wiki/Installation
 
 ### californium-proxy-java
 
@@ -390,3 +392,8 @@ Adds a new media type to the registry.
   - `name` - a name of the media type (e.g. `image/gif`),
   - `extension` - an extension used for files of that media type
     (e.g. 'gif').
+
+## License
+
+This project is released under the
+[MIT License](https://raw.github.com/morkai/californium-proxy-node/master/license.md).
